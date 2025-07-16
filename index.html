@@ -86,8 +86,8 @@
 
   <script>
     function tossCoin() {
-      const teamA = "Team A";
-      const teamB = 'Team B';
+      const teamA = document.getElementById('teamA').value || 'Team A';
+      const teamB = document.getElementById('teamB').value || 'Team B';
 
       const resultBox = document.getElementById('result');
       const video = document.getElementById('coinVideo');
